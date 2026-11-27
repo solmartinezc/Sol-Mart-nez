@@ -6,7 +6,7 @@
 <title>Sol Martínez | Ortomolecular Chile</title>
 <meta name="description" content="Founder of Ortomolecular Chile — liposomal supplements with METAZOME™ technology, Ormovit® and Nordic Naturals in Chile.">
 <meta name="author" content="Sol Martínez">
-<meta name="theme-color" content="#2E1B59">
+<meta name="theme-color" content="#C1B7F8">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Sol Martínez — Founder, Ortomolecular Chile">
 <meta property="og:description" content="Your health matters to us. Orthomolecular nutrition, natural products and supplements.">
@@ -15,24 +15,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#241C33; --muted:#6B6378; --purple:#2E1B59; --lila:#C1B7F8;
-    --orange:#FF6B00; --bg:#F7F4FB; --card:#FFFFFF; --line:#E7E1F2;
+    --ink:#2E2E2E; --muted:#727272; --purple:#45268F; --lila:#C1B7F8;
+    --orange:#FF6B00; --bg:#EEEEEE; --card:#FFFFFF; --line:#E3E3E3;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{-webkit-text-size-adjust:100%}
   body{
     font-family:'Instrument Sans',system-ui,sans-serif;font-weight:500;color:var(--ink);
     background:var(--bg);
-    background-image:radial-gradient(circle at 15% -10%, rgba(193,183,248,.55), transparent 45%),
-                     radial-gradient(circle at 110% 30%, rgba(255,107,0,.10), transparent 40%);
+    background-image:linear-gradient(180deg,#E2DCFA 0px,#EEEEEE 420px);background-repeat:no-repeat;
     min-height:100vh;display:flex;justify-content:center;
     padding:32px 18px calc(40px + env(safe-area-inset-bottom));
   }
   main{width:100%;max-width:440px}
   .card{background:var(--card);border-radius:28px;padding:36px 26px 28px;
-        box-shadow:0 20px 60px -20px rgba(46,27,89,.25);text-align:center;position:relative;overflow:hidden}
+        box-shadow:0 20px 60px -24px rgba(69,38,143,.22);text-align:center;position:relative;overflow:hidden}
   .card::before{content:"";position:absolute;inset:0 0 auto 0;height:118px;
-        background:linear-gradient(135deg,var(--purple) 0%,#5A3FA0 100%)}
+        background:linear-gradient(135deg,#C1B7F8 0%,#D6CEFA 100%)}
   .photo{position:relative;width:148px;height:148px;border-radius:50%;object-fit:cover;
          border:5px solid #fff;box-shadow:0 8px 24px rgba(46,27,89,.25);margin-top:6px}
   h1{font-family:'Instrument Sans',sans-serif;font-weight:600;font-size:2.3rem;line-height:1.1;margin-top:16px;letter-spacing:-.02em}
@@ -53,7 +52,7 @@
   .save{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:24px;
         padding:16px;border-radius:16px;border:0;background:var(--purple);color:#fff;
         font:600 1rem 'Instrument Sans',sans-serif;cursor:pointer;transition:.2s}
-  .save:hover{background:#3d2775}
+  .save:hover{background:#371e73}
   .save svg{width:20px;height:20px;fill:#fff}
   .share{background:transparent;color:var(--purple);border:1.5px solid var(--purple);margin-top:10px}
   .share:hover{background:var(--purple);color:#fff}
@@ -67,7 +66,7 @@
   .links a:hover{border-color:var(--purple);transform:translateY(-2px);box-shadow:0 10px 24px -12px rgba(46,27,89,.35)}
   .links .t{font-weight:600;font-size:1.05rem}
   .links .s{display:block;font-size:.82rem;color:var(--muted);margin-top:2px;font-weight:400}
-  .links .arrow{flex:none;width:36px;height:36px;border-radius:50%;background:var(--bg);display:grid;place-items:center;color:var(--purple);font-size:1.1rem}
+  .links .arrow{flex:none;width:36px;height:36px;border-radius:50%;background:#F3F0FD;display:grid;place-items:center;color:var(--purple);font-size:1.1rem}
   .links a:hover .arrow{background:var(--purple);color:#fff}
   .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:10px;vertical-align:middle}
 
@@ -151,10 +150,10 @@
     qr.addData('https://wa.me/' + WHATSAPP);
     qr.make();
     document.getElementById('qrcode').innerHTML = qr.createSvgTag({cellSize: 6, margin: 0})
-      .replace(/fill="black"/g, 'fill="#2E1B59"');
+      .replace(/fill="black"/g, 'fill="#45268F"');
   } catch (e) {
     document.getElementById('qrcode').innerHTML =
-      '<img alt="QR" src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&color=2E1B59&data=' +
+      '<img alt="QR" src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&color=45268F&data=' +
       encodeURIComponent('https://wa.me/' + WHATSAPP) + '">';
   }
 
